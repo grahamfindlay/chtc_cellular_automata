@@ -1,2 +1,7 @@
 build/*.tar.gz
 build/*.tgz
+*.chtc_log
+*.chtc_err
+*.chtc_out
+*.pyphi_log
+*.pkl

@@ -6,4 +6,4 @@ export PATH=$(pwd)/python/bin:$PATH
 mkdir home
 export HOME=$(pwd)/home
 
-python job.py
+python job.py $1 $2 $3
