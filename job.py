@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# This code is for PyPhi version 0.8.1 to test various concept cuts and system cuts.
-# @Larissa: use virtual environment TestGrahamAdditions
 
 import sys
 import logging

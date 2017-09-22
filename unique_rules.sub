@@ -1,0 +1,22 @@
+# Experiment submission file
+# Usage: condor_submit thisfile.sub
+universe = vanilla
+requirements = (OpSys == "LINUX") && ((OpSysMajorVer == 6) || (OpSysMajorVer == 7))
+request_cpus = 1
+request_memory = 512MB
+request_disk = 512MB
+
+executable = jobwrapper.sh
+Python = build/Python-3.6.2-built.tar.gz
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_input_files = $(Python), job.py
+arguments = -r $(rule) -n $(n_on)
+
+log = $(rule)_$(n_on)/log
+error = $(rule)_$(n_on)/err
+output = $(rule)_$(n_on)/out
+
+include : unique_rules.sh |
+
+queue rule,n_on from unique_rules
