@@ -5,3 +5,4 @@ build/*.tgz
 *.chtc_out
 *.pyphi_log
 *.pkl
+pyphi.log
