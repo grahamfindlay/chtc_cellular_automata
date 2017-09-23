@@ -8,6 +8,7 @@ import pickle
 import pyphi
 import numpy as np
 
+
 def get_cm(n):
   '''Return selfloops and nearest-neighbor connections for an n-node ring.'''
   I = np.eye(n)
