@@ -9,3 +9,6 @@ tar -xzf SLIBS.tar.gz
 export LD_LIBRARY_PATH=$(pwd)/SS
 
 python job.py $1 $2 $3
+
+rm pyphi.log
+rm -rf __pyphi_cache__

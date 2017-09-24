@@ -6,3 +6,4 @@ build/*.tgz
 *.pyphi_log
 *.pkl
 pyphi.log
+*__pyphi_cache__
