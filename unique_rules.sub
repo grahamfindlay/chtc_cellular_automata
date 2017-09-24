@@ -11,7 +11,7 @@ Python = build/Python-3.6.2-built.tar.gz
 SLIBS = build/SLIBS.tar.gz
 should_transfer_files = YES
 when_to_transfer_output = ON_EXIT
-transfer_input_files = $(Python), $(SLIBS), job.py, pyphi_config.yml
+transfer_input_files = $(Python), $(SLIBS), job/
 
 Description = r$(rule)_n$(n)_z$(z)
 log = $(Description).chtc_log
