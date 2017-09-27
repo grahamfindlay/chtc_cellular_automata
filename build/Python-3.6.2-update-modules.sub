@@ -1,10 +1,10 @@
 universe = vanilla
 # Name the log file:
-log = Python-3.6.2-build.log
+log = Python-3.6.2-update-modules.log
 
 # Name the files where standard output and error should be saved:
-output = Python-3.6.2-build.out
-error = Python-3.6.2-build.err
+output = Python-3.6.2-update-modules.out
+error = Python-3.6.2-update-modules.err
 
 # If you wish to compile code, you'll need the below lines. 
 #  Otherwise, LEAVE THEM OUT if you just want to interactively test!
@@ -13,7 +13,7 @@ requirements = (OpSysMajorVer =?= 6) && ( IsBuildSlot == true )
 
 # Indicate all files that need to go into the interactive job session,
 #  including any tar files that you prepared:
-transfer_input_files = Python-3.6.2.tgz, install-modules.sh
+transfer_input_files = Python-3.6.2-built.tar.gz, update-modules.sh
 
 # It's still important to request enough computing resources. The below 
 #  values are a good starting point, but consider your file sizes for an
