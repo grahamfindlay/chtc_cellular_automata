@@ -15,9 +15,7 @@ for job in files:
     with open(job, 'rb') as f:
         mip = pickle.load(f)
         if mip:
-            assert(mip.big_mip_past.unpartitioned_constellation ==
-                   mip.big_mip_future.unpartitioned_constellation)
-            data = [len(mip.big_mip_past.unpartitioned_constellation),
+            data = [len(mip.unpartitioned_constellation),
                     mip.phi,
                     len(mip.subsystem)]
         else:
